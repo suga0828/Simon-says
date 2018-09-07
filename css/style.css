@@ -1,0 +1,102 @@
+@font-face {
+	font-family: simonSays;
+	src: url(../font/SimonSays-Bold.ttf);
+	font-weight: bold;
+}
+
+* {
+	font-family: 'simonSays';
+}
+
+body {
+	background: #F3C8AF;
+	margin: 0 auto;
+}
+
+p {
+	margin: 0;	
+}
+
+.description {
+	text-align: center;
+}
+
+.tittle { 
+	color: #383F3F;
+	font-size: 10vh !important;
+}
+
+.subtittle {
+	color: #F1F3F2;
+	font-size: 6vh !important;
+}
+
+.level-description {
+	width: 50vh;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.gameboard {
+	height: 100vh;
+	width: 100vh;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+	max-height: 60vh;
+	max-width: 60vh;
+	align-items: center;
+	position: relative;
+}
+
+.btn-start {
+	width: 400px;
+	height: 12vh;
+	background: #ecf0f1;
+	color: #2c3e50;
+	font-size: 8vh;
+	position: absolute;
+	top: calc(50% - 6vh);
+	left: calc(50% - 200px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.color {
+	width: 50%;
+	height: 50%;
+	display: inline-block;
+}
+.left {
+	float: left;
+}
+.right {
+	float: left;
+}
+.celeste {
+	background: #22a6b3;
+}
+.celeste.encender {
+	background: #7ed6df;
+}
+.violeta {
+	background: #be2edd;
+}
+.violeta.encender {
+	background: #e056fd;
+}
+.naranja {
+	background: #f0932b;
+}
+.naranja.encender {
+	background: #ffbe76;
+}
+.verde {
+	background: #6ab04c;
+}
+.verde.encender {
+	background: #badc58;
+}
+.ocultar {
+	display: none;
+}
