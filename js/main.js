@@ -131,7 +131,7 @@ class Juego {
 	}
 
 	ganoElJuego() {
-		maxPuntuacion.innerHTML = this.nivel
+		maxPuntuacion.innerHTML = ULTIMO_NIVEL
 		swal('Congratulations, you won the game!', '', 'success', {
 			button: 'Play again!'
 		})
@@ -139,7 +139,9 @@ class Juego {
 	}
 
 	perdioElJuego() {
-		maxPuntuacion.innerHTML = this.nivel
+		if (maxPuntuacion.innerHTML < this.nivel) {
+			maxPuntuacion.innerHTML = this.nivel - 1
+		}
 		swal('We´re sorry, you lost the game. Don´t worry', '','error', {
 			button: 'Try again!'
 		})
